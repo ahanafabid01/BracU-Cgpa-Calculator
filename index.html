@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRACU CGPA Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>BRACU CGPA Calculator</h1>
+            <p>Calculate your semester CGPA with precision</p>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h2 class="section-title">Previous Academic Record</h2>
+                <div class="form-row">
+                    <div class="form-col">
+                        <label for="prevCgpa">CGPA (Till Previous Semester)</label>
+                        <input type="number" id="prevCgpa" step="0.01" min="0" max="4" placeholder="e.g., 3.50">
+                    </div>
+                    <div class="form-col">
+                        <label for="prevCredits">Total Credits Completed</label>
+                        <input type="number" id="prevCredits" min="0" placeholder="e.g., 45">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Current Semester</h2>
+                <div class="form-group">
+                    <label for="numCourses">Total Courses This Semester</label>
+                    <input type="number" id="numCourses" min="1" max="10" placeholder="e.g., 4">
+                </div>
+
+                <div class="courses-container" id="coursesContainer" style="display: none;">
+                    <h4 style="margin-bottom: 20px; color: #2c3e50;">Course Grades & Credits</h4>
+                    <div id="coursesList"></div>
+                </div>
+            </div>
+
+            <button class="calculate-btn" onclick="calculateCGPA()">Calculate CGPA</button>
+
+            <div class="result" id="result">
+                <h3>Your New CGPA</h3>
+                <div class="cgpa-value" id="cgpaValue">0.00</div>
+                <p>Keep up the excellent work!</p>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
