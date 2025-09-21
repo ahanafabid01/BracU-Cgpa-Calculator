@@ -8,6 +8,11 @@ With a clean interface and straightforward functionality, the BRACU CGPA Calcula
 
 ---
 
+## 🌐 Live Demo
+👉 [Try it here](https://ahanafabid01.github.io/Brac-University-Cgpa-Calculator/)
+
+---
+
 ## 🚀 Key Features
 - Calculate semester GPA and cumulative CGPA  
 - Input course grades with credit hours  
